@@ -110,6 +110,12 @@
     <Compile Include="UC_Administrator\UC_Dashboard.Designer.cs">
       <DependentUpon>UC_Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_Administrator\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Administrator\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="SignUpFormForCustomer.resx">
       <DependentUpon>SignUpFormForCustomer.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,6 +155,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Administrator\UC_Dashboard.resx">
       <DependentUpon>UC_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Administrator\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -316,6 +325,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\register_40px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no_35px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yes_35px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide_passw_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide_passw_40px1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

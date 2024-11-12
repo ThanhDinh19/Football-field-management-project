@@ -52,9 +52,14 @@
             this.rdo_Female = new System.Windows.Forms.RadioButton();
             this.cbo_Position = new System.Windows.Forms.ComboBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btn_Clear = new System.Windows.Forms.Button();
+            this.CardPhoto = new System.Windows.Forms.PictureBox();
+            this.btn_ChooseImg = new System.Windows.Forms.Button();
             this.labelPosition = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.ShowHide = new System.Windows.Forms.PictureBox();
+            this.pic_valid = new System.Windows.Forms.PictureBox();
             this.txt_Username = new System.Windows.Forms.TextBox();
             this.labelPassword = new System.Windows.Forms.Label();
             this.txt_Password = new System.Windows.Forms.TextBox();
@@ -63,19 +68,16 @@
             this.label15 = new System.Windows.Forms.Label();
             this.btn_Reset = new System.Windows.Forms.Button();
             this.btn_SignUp = new System.Windows.Forms.Button();
-            this.btn_Clear = new System.Windows.Forms.Button();
-            this.CardPhoto = new System.Windows.Forms.PictureBox();
-            this.btn_ChooseImg = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pic_valid = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CardPhoto)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ShowHide)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_valid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelNoti
@@ -144,6 +146,7 @@
             this.txt_Phonenumber.Name = "txt_Phonenumber";
             this.txt_Phonenumber.Size = new System.Drawing.Size(346, 44);
             this.txt_Phonenumber.TabIndex = 31;
+            this.txt_Phonenumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Phonenumber_KeyPress);
             // 
             // txt_Address
             // 
@@ -337,131 +340,6 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Card Photo";
             // 
-            // labelPosition
-            // 
-            this.labelPosition.AutoSize = true;
-            this.labelPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPosition.Location = new System.Drawing.Point(260, 368);
-            this.labelPosition.Name = "labelPosition";
-            this.labelPosition.Size = new System.Drawing.Size(70, 16);
-            this.labelPosition.TabIndex = 44;
-            this.labelPosition.Text = "notification";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(34, 335);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(95, 31);
-            this.label6.TabIndex = 37;
-            this.label6.Text = "Position";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.pic_valid);
-            this.groupBox2.Controls.Add(this.txt_Username);
-            this.groupBox2.Controls.Add(this.labelPassword);
-            this.groupBox2.Controls.Add(this.txt_Password);
-            this.groupBox2.Controls.Add(this.labelUsername);
-            this.groupBox2.Controls.Add(this.label14);
-            this.groupBox2.Controls.Add(this.label15);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.ForeColor = System.Drawing.Color.Black;
-            this.groupBox2.Location = new System.Drawing.Point(460, 593);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(646, 162);
-            this.groupBox2.TabIndex = 46;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "User Account";
-            // 
-            // txt_Username
-            // 
-            this.txt_Username.Location = new System.Drawing.Point(263, 18);
-            this.txt_Username.Multiline = true;
-            this.txt_Username.Name = "txt_Username";
-            this.txt_Username.Size = new System.Drawing.Size(302, 44);
-            this.txt_Username.TabIndex = 46;
-            // 
-            // labelPassword
-            // 
-            this.labelPassword.AutoSize = true;
-            this.labelPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPassword.Location = new System.Drawing.Point(260, 139);
-            this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(70, 16);
-            this.labelPassword.TabIndex = 49;
-            this.labelPassword.Text = "notification";
-            // 
-            // txt_Password
-            // 
-            this.txt_Password.Location = new System.Drawing.Point(263, 92);
-            this.txt_Password.Multiline = true;
-            this.txt_Password.Name = "txt_Password";
-            this.txt_Password.Size = new System.Drawing.Size(351, 44);
-            this.txt_Password.TabIndex = 45;
-            // 
-            // labelUsername
-            // 
-            this.labelUsername.AutoSize = true;
-            this.labelUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUsername.Location = new System.Drawing.Point(260, 65);
-            this.labelUsername.Name = "labelUsername";
-            this.labelUsername.Size = new System.Drawing.Size(70, 16);
-            this.labelUsername.TabIndex = 50;
-            this.labelUsername.Text = "notification";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(34, 31);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(117, 31);
-            this.label14.TabIndex = 48;
-            this.label14.Text = "Username";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(34, 105);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(110, 31);
-            this.label15.TabIndex = 47;
-            this.label15.Text = "Password";
-            // 
-            // btn_Reset
-            // 
-            this.btn_Reset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
-            this.btn_Reset.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Reset.ForeColor = System.Drawing.Color.White;
-            this.btn_Reset.Image = global::QLSanBong.Properties.Resources.reset_40px1;
-            this.btn_Reset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Reset.Location = new System.Drawing.Point(958, 776);
-            this.btn_Reset.Name = "btn_Reset";
-            this.btn_Reset.Size = new System.Drawing.Size(148, 54);
-            this.btn_Reset.TabIndex = 48;
-            this.btn_Reset.Text = "Reset";
-            this.btn_Reset.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_Reset.UseVisualStyleBackColor = false;
-            // 
-            // btn_SignUp
-            // 
-            this.btn_SignUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
-            this.btn_SignUp.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_SignUp.ForeColor = System.Drawing.Color.White;
-            this.btn_SignUp.Image = global::QLSanBong.Properties.Resources.register_40px1;
-            this.btn_SignUp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_SignUp.Location = new System.Drawing.Point(750, 776);
-            this.btn_SignUp.Name = "btn_SignUp";
-            this.btn_SignUp.Size = new System.Drawing.Size(149, 54);
-            this.btn_SignUp.TabIndex = 47;
-            this.btn_SignUp.Text = "Sign Up";
-            this.btn_SignUp.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_SignUp.UseVisualStyleBackColor = false;
-            this.btn_SignUp.Click += new System.EventHandler(this.btn_SignUp_Click);
-            // 
             // btn_Clear
             // 
             this.btn_Clear.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -498,6 +376,154 @@
             this.btn_ChooseImg.UseVisualStyleBackColor = true;
             this.btn_ChooseImg.Click += new System.EventHandler(this.btn_ChooseImg_Click);
             // 
+            // labelPosition
+            // 
+            this.labelPosition.AutoSize = true;
+            this.labelPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPosition.Location = new System.Drawing.Point(260, 368);
+            this.labelPosition.Name = "labelPosition";
+            this.labelPosition.Size = new System.Drawing.Size(70, 16);
+            this.labelPosition.TabIndex = 44;
+            this.labelPosition.Text = "notification";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(34, 335);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(95, 31);
+            this.label6.TabIndex = 37;
+            this.label6.Text = "Position";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.ShowHide);
+            this.groupBox2.Controls.Add(this.pic_valid);
+            this.groupBox2.Controls.Add(this.txt_Username);
+            this.groupBox2.Controls.Add(this.labelPassword);
+            this.groupBox2.Controls.Add(this.txt_Password);
+            this.groupBox2.Controls.Add(this.labelUsername);
+            this.groupBox2.Controls.Add(this.label14);
+            this.groupBox2.Controls.Add(this.label15);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.Color.Black;
+            this.groupBox2.Location = new System.Drawing.Point(460, 593);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(646, 162);
+            this.groupBox2.TabIndex = 46;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "User Account";
+            // 
+            // ShowHide
+            // 
+            this.ShowHide.Image = global::QLSanBong.Properties.Resources.hide_passw_40px1;
+            this.ShowHide.Location = new System.Drawing.Point(581, 92);
+            this.ShowHide.Name = "ShowHide";
+            this.ShowHide.Size = new System.Drawing.Size(47, 44);
+            this.ShowHide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ShowHide.TabIndex = 52;
+            this.ShowHide.TabStop = false;
+            this.ShowHide.Click += new System.EventHandler(this.ShowHide_Click);
+            // 
+            // pic_valid
+            // 
+            this.pic_valid.Location = new System.Drawing.Point(583, 20);
+            this.pic_valid.Name = "pic_valid";
+            this.pic_valid.Size = new System.Drawing.Size(45, 42);
+            this.pic_valid.TabIndex = 51;
+            this.pic_valid.TabStop = false;
+            // 
+            // txt_Username
+            // 
+            this.txt_Username.Location = new System.Drawing.Point(226, 18);
+            this.txt_Username.Multiline = true;
+            this.txt_Username.Name = "txt_Username";
+            this.txt_Username.Size = new System.Drawing.Size(351, 44);
+            this.txt_Username.TabIndex = 46;
+            this.txt_Username.TextChanged += new System.EventHandler(this.txt_Username_TextChanged);
+            // 
+            // labelPassword
+            // 
+            this.labelPassword.AutoSize = true;
+            this.labelPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPassword.Location = new System.Drawing.Point(223, 139);
+            this.labelPassword.Name = "labelPassword";
+            this.labelPassword.Size = new System.Drawing.Size(70, 16);
+            this.labelPassword.TabIndex = 49;
+            this.labelPassword.Text = "notification";
+            // 
+            // txt_Password
+            // 
+            this.txt_Password.Location = new System.Drawing.Point(226, 92);
+            this.txt_Password.Multiline = true;
+            this.txt_Password.Name = "txt_Password";
+            this.txt_Password.PasswordChar = '*';
+            this.txt_Password.Size = new System.Drawing.Size(351, 44);
+            this.txt_Password.TabIndex = 45;
+            // 
+            // labelUsername
+            // 
+            this.labelUsername.AutoSize = true;
+            this.labelUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUsername.Location = new System.Drawing.Point(223, 65);
+            this.labelUsername.Name = "labelUsername";
+            this.labelUsername.Size = new System.Drawing.Size(70, 16);
+            this.labelUsername.TabIndex = 50;
+            this.labelUsername.Text = "notification";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(44, 31);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(117, 31);
+            this.label14.TabIndex = 48;
+            this.label14.Text = "Username";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(44, 105);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(110, 31);
+            this.label15.TabIndex = 47;
+            this.label15.Text = "Password";
+            // 
+            // btn_Reset
+            // 
+            this.btn_Reset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
+            this.btn_Reset.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Reset.ForeColor = System.Drawing.Color.White;
+            this.btn_Reset.Image = global::QLSanBong.Properties.Resources.reset_40px1;
+            this.btn_Reset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Reset.Location = new System.Drawing.Point(958, 776);
+            this.btn_Reset.Name = "btn_Reset";
+            this.btn_Reset.Size = new System.Drawing.Size(148, 54);
+            this.btn_Reset.TabIndex = 48;
+            this.btn_Reset.Text = "Reset";
+            this.btn_Reset.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Reset.UseVisualStyleBackColor = false;
+            this.btn_Reset.Click += new System.EventHandler(this.btn_Reset_Click);
+            // 
+            // btn_SignUp
+            // 
+            this.btn_SignUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
+            this.btn_SignUp.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_SignUp.ForeColor = System.Drawing.Color.White;
+            this.btn_SignUp.Image = global::QLSanBong.Properties.Resources.register_40px1;
+            this.btn_SignUp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_SignUp.Location = new System.Drawing.Point(725, 776);
+            this.btn_SignUp.Name = "btn_SignUp";
+            this.btn_SignUp.Size = new System.Drawing.Size(174, 54);
+            this.btn_SignUp.TabIndex = 47;
+            this.btn_SignUp.Text = "Sign Up";
+            this.btn_SignUp.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_SignUp.UseVisualStyleBackColor = false;
+            this.btn_SignUp.Click += new System.EventHandler(this.btn_SignUp_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::QLSanBong.Properties.Resources.user;
@@ -507,14 +533,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 41;
             this.pictureBox1.TabStop = false;
-            // 
-            // pic_valid
-            // 
-            this.pic_valid.Location = new System.Drawing.Point(571, 18);
-            this.pic_valid.Name = "pic_valid";
-            this.pic_valid.Size = new System.Drawing.Size(43, 42);
-            this.pic_valid.TabIndex = 51;
-            this.pic_valid.TabStop = false;
             // 
             // UC_AddUser
             // 
@@ -536,11 +554,12 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.CardPhoto)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CardPhoto)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShowHide)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_valid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -587,5 +606,6 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.PictureBox pic_valid;
+        private System.Windows.Forms.PictureBox ShowHide;
     }
 }

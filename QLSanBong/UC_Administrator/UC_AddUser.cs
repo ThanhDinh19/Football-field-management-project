@@ -34,8 +34,6 @@ namespace QLSanBong.UC_Administrator
             load_cbo_Position();
         }
 
-
-
         private void load_cbo_Position()
         {
             DataTable dt = new DataTable();
@@ -43,6 +41,8 @@ namespace QLSanBong.UC_Administrator
             cbo_Position.DisplayMember = "TenCV";
             cbo_Position.ValueMember = "MaCV";
             cbo_Position.DataSource = dt;
+
+            cbo_Position.SelectedIndex = 1;
 
             cbo_Position.DropDownStyle = ComboBoxStyle.DropDownList;    
         }
@@ -177,6 +177,7 @@ namespace QLSanBong.UC_Administrator
             if (result > 0)
             {
                 labelNoti.Text = "Sign Up Succeeded !";
+                labelNoti.Visible = true;
             }
         }
 
@@ -306,6 +307,79 @@ namespace QLSanBong.UC_Administrator
             catch (Exception ex)
             {
                 MessageBox.Show($"Error copying the file: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void txt_Phonenumber_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_Username_TextChanged(object sender, EventArgs e)
+        {
+            string query = "SELECT count(*) FROM Table_UserNV WHERE TaiKhoanNV = '" + txt_Username.Text + "'";
+
+            object result = dataProvider.ExecScalar(query);
+
+            if (int.Parse(result.ToString()) == 0)
+            {
+                pic_valid.Image = Properties.Resources.yes_35px;
+            }
+            else
+            {
+                pic_valid.Image = Properties.Resources.no_35px;
+            }
+
+            if (txt_Username.Text != "")
+            {
+                labelUsername.Visible = false;
+            }
+
+            if (txt_Username.Text == "")
+            {
+                pic_valid.Visible = false;
+            }
+            else
+            {
+                pic_valid.Visible = true;
+            }
+        }
+
+        private void btn_Reset_Click(object sender, EventArgs e)
+        {
+            Invisible();
+            txt_Fullname.Clear();
+            txt_Phonenumber.Clear();
+            txt_Address.Clear();
+            txt_Salary.Clear();
+            load_cbo_Position();
+            CardPhoto.Image = null;
+            rdo_Active.Checked = true;
+            rdo_Male.Checked = true;
+            pic_valid.Visible = false;
+            txt_Username.Clear();
+            txt_Password.Clear();
+        }
+
+        private void ShowHide_Click(object sender, EventArgs e)
+        {
+            if (txt_Password.PasswordChar == '*')
+            {
+                txt_Password.PasswordChar = '\0';
+                ShowHide.Image = Properties.Resources.show_passw_40px;
+            }
+            else
+            {
+                txt_Password.PasswordChar = '*';
+                ShowHide.Image = Properties.Resources.hide_passw_40px;
             }
         }
     }

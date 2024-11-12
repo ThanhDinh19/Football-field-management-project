@@ -233,6 +233,26 @@ namespace QLSanBong.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hide_passw_40px {
+            get {
+                object obj = ResourceManager.GetObject("hide_passw_40px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hide_passw_40px1 {
+            get {
+                object obj = ResourceManager.GetObject("hide_passw_40px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap HUITlogo {
             get {
                 object obj = ResourceManager.GetObject("HUITlogo", resourceCulture);
@@ -296,6 +316,16 @@ namespace QLSanBong.Properties {
         internal static System.Drawing.Bitmap logout1 {
             get {
                 object obj = ResourceManager.GetObject("logout1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap no_35px {
+            get {
+                object obj = ResourceManager.GetObject("no_35px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -506,6 +536,16 @@ namespace QLSanBong.Properties {
         internal static System.Drawing.Bitmap warehouse {
             get {
                 object obj = ResourceManager.GetObject("warehouse", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap yes_35px {
+            get {
+                object obj = ResourceManager.GetObject("yes_35px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

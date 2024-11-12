@@ -127,7 +127,12 @@ values
 	(2, 'Staff');
 go
 
+select count(*) from NhanVien where MaCV = 2
 
+select * from Table_UserNV
+select * from NhanVien
+delete from NhanVien
+delete from Table_UserNV
 
 create proc proc_AddUser
 @TaiKhoanNV VARCHAR(30), @PasswordNV VARCHAR(255), @MaNhanVien VARCHAR(10), @TrangThai NVARCHAR(20)
@@ -153,4 +158,7 @@ as
 		insert into NhanVien values
 			(@MaNhanVien, @MaCV, @TenNhanVien, @SoDienThoai, @DiaChi, @GioiTinh, @Luong, @AnhThe)
 	end
+
 select * from Table_UserNV
+
+

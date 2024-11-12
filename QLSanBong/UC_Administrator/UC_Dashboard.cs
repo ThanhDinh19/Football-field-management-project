@@ -12,6 +12,8 @@ namespace QLSanBong.UC_Administrator
 {
     public partial class UC_Dashboard : UserControl
     {
+        DataProvider dataProvider = new DataProvider();
+
         public UC_Dashboard()
         {
             InitializeComponent();
@@ -19,7 +21,16 @@ namespace QLSanBong.UC_Administrator
 
         private void btn_Refresh_Click(object sender, EventArgs e)
         {
+            load();
+        }
 
+        private void load()
+        {
+            string countStaff = dataProvider.ExecScalar("select count(*) from NhanVien where MaCV = 2").ToString();
+            string countAdmin = dataProvider.ExecScalar("select count(*) from NhanVien where MaCV = 1").ToString();
+
+            labelStaff.Text = countStaff;
+            labelAdmin.Text = countAdmin;
         }
     }
 }
