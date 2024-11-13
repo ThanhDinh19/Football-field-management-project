@@ -55,6 +55,8 @@ namespace QLSanBong.UC_Administrator
             labelSalary.Visible = false;    
             labelPosition.Visible = false;
             labelNoti.Visible = false;
+            labelUsername.Visible = false;
+            labelPassword.Visible = false;
         }
       
         private void btn_SignUp_Click(object sender, EventArgs e)

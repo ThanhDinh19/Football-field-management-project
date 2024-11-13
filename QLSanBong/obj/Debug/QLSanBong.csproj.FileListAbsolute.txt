@@ -45,10 +45,6 @@ D:\software_technology\QL_SanBongMini\QLSanBong\obj\Debug\QLSanBong.SignUpFormFo
 D:\software_technology\QL_SanBongMini\QL_SanBongMini\QLSanBong\bin\Debug\QLSanBong.exe.config
 D:\software_technology\QL_SanBongMini\QL_SanBongMini\QLSanBong\bin\Debug\QLSanBong.exe
 D:\software_technology\QL_SanBongMini\QL_SanBongMini\QLSanBong\bin\Debug\QLSanBong.pdb
-D:\software_technology\QL_SanBongMini\QL_SanBongMini\QLSanBong\bin\Debug\BLL.dll
-D:\software_technology\QL_SanBongMini\QL_SanBongMini\QLSanBong\bin\Debug\DTO.dll
-D:\software_technology\QL_SanBongMini\QL_SanBongMini\QLSanBong\bin\Debug\BLL.pdb
-D:\software_technology\QL_SanBongMini\QL_SanBongMini\QLSanBong\bin\Debug\DTO.pdb
 D:\software_technology\QL_SanBongMini\QL_SanBongMini\QLSanBong\obj\Debug\QLSanBong.csproj.AssemblyReference.cache
 D:\software_technology\QL_SanBongMini\QL_SanBongMini\QLSanBong\obj\Debug\QLSanBong.csproj.SuggestedBindingRedirects.cache
 D:\software_technology\QL_SanBongMini\QL_SanBongMini\QLSanBong\obj\Debug\QLSanBong.SignUpFormForCustomer.resources
@@ -63,8 +59,8 @@ D:\software_technology\QL_SanBongMini\QL_SanBongMini\QLSanBong\obj\Debug\QLSanBo
 D:\software_technology\QL_SanBongMini\QL_SanBongMini\QLSanBong\obj\Debug\QLSanBong.UC_Administrator.UC_Dashboard.resources
 D:\software_technology\QL_SanBongMini\QL_SanBongMini\QLSanBong\obj\Debug\QLSanBong.csproj.GenerateResource.cache
 D:\software_technology\QL_SanBongMini\QL_SanBongMini\QLSanBong\obj\Debug\QLSanBong.csproj.CoreCompileInputs.cache
-D:\software_technology\QL_SanBongMini\QL_SanBongMini\QLSanBong\obj\Debug\QLSanBong.csproj.CopyComplete
 D:\software_technology\QL_SanBongMini\QL_SanBongMini\QLSanBong\obj\Debug\QLSanBong.exe
 D:\software_technology\QL_SanBongMini\QL_SanBongMini\QLSanBong\obj\Debug\QLSanBong.pdb
 D:\software_technology\QL_SanBongMini\QL_SanBongMini\QLSanBong\obj\Debug\QLSanBong.UC_Administrator.UC_AddUser.resources
-D:\software_technology\QL_SanBongMini\QL_SanBongMini\QLSanBong\obj\Debug\QLSanBong.UC_Administrator.UserControl1.resources
+D:\software_technology\QL_SanBongMini\QL_SanBongMini\QLSanBong\obj\Debug\QLSanBong.UC_Administrator.UC_ViewUser.resources
+D:\software_technology\QL_SanBongMini\QL_SanBongMini\QLSanBong\obj\Debug\QLSanBong.UC_Administrator.UC_UpdateUser.resources

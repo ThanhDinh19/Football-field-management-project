@@ -17,6 +17,12 @@ namespace QLSanBong.UC_Administrator
         public UC_Dashboard()
         {
             InitializeComponent();
+            init();
+        }
+
+        private void init()
+        {
+            load();
         }
 
         private void btn_Refresh_Click(object sender, EventArgs e)

@@ -127,10 +127,12 @@ values
 	(2, 'Staff');
 go
 
-select count(*) from NhanVien where MaCV = 2
+
 
 select * from Table_UserNV
 select * from NhanVien
+
+
 delete from NhanVien
 delete from Table_UserNV
 
@@ -161,4 +163,47 @@ as
 
 select * from Table_UserNV
 
+go
 
+create proc proc_ViewUser
+as
+	begin
+		select nv.MaNhanVien as 'Employee ID', nv.TenNhanVien as 'Name', cv.TenCV as 'Position', nv.SoDienThoai as 'Phone number', nv.DiaChi as 'Address', nv.GioiTinh as 'Gender', nv.Luong as 'Salary', us.TaiKhoanNV as 'Username', us.PasswordNV as 'Password', us.TrangThai as 'Status'
+		from NhanVien nv, ChucVu cv, Table_UserNV us
+		where nv.MaCV = cv.MaCV and nv.MaNhanVien = us.MaNhanVien
+	end
+
+go
+
+create proc proc_ViewUser_by_search
+@search nvarchar(100)
+as
+	begin
+		select nv.MaNhanVien as 'Employee ID', nv.TenNhanVien as 'Name', cv.TenCV as 'Position', nv.SoDienThoai as 'Phone number', nv.DiaChi as 'Address', nv.GioiTinh as 'Gender', nv.Luong as 'Salary', us.TaiKhoanNV as 'Username', us.PasswordNV as 'Password', us.TrangThai as 'Status'
+		from NhanVien nv, ChucVu cv, Table_UserNV us
+		where nv.MaCV = cv.MaCV and nv.MaNhanVien = us.MaNhanVien and trim(lower(nv.TenNhanVien)) LIKE '%' + trim(lower(@search)) + '%'
+	end
+
+select GioiTinh from NhanVien where MaNhanVien = 'EMP000001'
+
+go
+
+create proc proc_UpdateEmployee
+@MaNhanVien VARCHAR(10), @MaCV INT, @TenNhanVien NVARCHAR(50), @SoDienThoai INT, @DiaChi NVARCHAR(100), @GioiTinh NCHAR(5), @Luong float
+as
+	begin
+		update NhanVien
+		set MaCV = @MaCV, TenNhanVien = @TenNhanVien, SoDienThoai = @SoDienThoai, DiaChi = @DiaChi, GioiTinh = @GioiTinh, Luong = @Luong
+		where MaNhanVien = @MaNhanVien
+	end
+
+create proc proc_UpdateUserNV
+@MaNhanVien varchar(10), @PasswordNV VARCHAR(255), @TrangThai NVARCHAR(20)
+as
+	begin
+		update Table_UserNV
+		set PasswordNV = @PasswordNV, TrangThai = @TrangThai
+		where MaNhanVien = @MaNhanVien
+	end
+
+select * from NhanVien

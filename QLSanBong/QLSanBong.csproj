@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Functions.cs" />
+    <Compile Include="MessageEventArgs.cs" />
     <Compile Include="SignUpFormForCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,11 +111,17 @@
     <Compile Include="UC_Administrator\UC_Dashboard.Designer.cs">
       <DependentUpon>UC_Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_Administrator\UserControl1.cs">
+    <Compile Include="UC_Administrator\UC_ViewUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_Administrator\UserControl1.Designer.cs">
-      <DependentUpon>UserControl1.cs</DependentUpon>
+    <Compile Include="UC_Administrator\UC_ViewUser.Designer.cs">
+      <DependentUpon>UC_ViewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Administrator\UC_UpdateUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Administrator\UC_UpdateUser.Designer.cs">
+      <DependentUpon>UC_UpdateUser.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="SignUpFormForCustomer.resx">
       <DependentUpon>SignUpFormForCustomer.cs</DependentUpon>
@@ -156,8 +163,11 @@
     <EmbeddedResource Include="UC_Administrator\UC_Dashboard.resx">
       <DependentUpon>UC_Dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_Administrator\UserControl1.resx">
-      <DependentUpon>UserControl1.cs</DependentUpon>
+    <EmbeddedResource Include="UC_Administrator\UC_ViewUser.resx">
+      <DependentUpon>UC_ViewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Administrator\UC_UpdateUser.resx">
+      <DependentUpon>UC_UpdateUser.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -204,16 +214,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\CuongLo.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BLL\BLL.csproj">
-      <Project>{852e8aa2-8bdb-46ba-8b15-d447595dc271}</Project>
-      <Name>BLL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DTO\DTO.csproj">
-      <Project>{253f656d-7064-4eae-8767-b9efb04cfdda}</Project>
-      <Name>DTO</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cLX.gif" />
@@ -337,6 +337,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\hide_passw_40px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\470206.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_40px.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noUserImage.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

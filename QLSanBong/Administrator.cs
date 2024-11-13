@@ -17,8 +17,16 @@ namespace QLSanBong
         {
             InitializeComponent();
             format_btn();
+
+            uC_ViewUser1.ShowUpdateUserControlWithMessage += UC_ViewUsers1_ShowUpdateUserControlWithMessage;
         }
 
+        private void UC_ViewUsers1_ShowUpdateUserControlWithMessage(object sender, MessageEventArgs e)
+        {
+            uC_UpdateUser1.SetMessage(e.Message); // Truyền chuỗi qua UC_UpdateUser
+            uC_UpdateUser1.Visible = true;
+            uC_UpdateUser1.BringToFront(); // Hiển thị UC_UpdateUser
+        }
 
         private void format_btn()
         {
@@ -60,6 +68,8 @@ namespace QLSanBong
         {
             uC_Dashboard1.Visible = false;
             uC_AddUser1.Visible = false;
+            uC_ViewUser1.Visible = false;
+            uC_UpdateUser1.Visible = false;
             btn_Dashboard.PerformClick();
         }
 
@@ -88,6 +98,9 @@ namespace QLSanBong
             ResetBtn();
             btn_ViewUser.ForeColor = Color.Black;
             btn_ViewUser.BackColor = Color.White;
+
+            uC_ViewUser1.Visible = true;
+            uC_ViewUser1.BringToFront();
         }
 
         private void btn_Profile_Click(object sender, EventArgs e)
