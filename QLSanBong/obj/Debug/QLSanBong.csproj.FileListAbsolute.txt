@@ -64,3 +64,4 @@ D:\software_technology\QL_SanBongMini\QL_SanBongMini\QLSanBong\obj\Debug\QLSanBo
 D:\software_technology\QL_SanBongMini\QL_SanBongMini\QLSanBong\obj\Debug\QLSanBong.UC_Administrator.UC_AddUser.resources
 D:\software_technology\QL_SanBongMini\QL_SanBongMini\QLSanBong\obj\Debug\QLSanBong.UC_Administrator.UC_ViewUser.resources
 D:\software_technology\QL_SanBongMini\QL_SanBongMini\QLSanBong\obj\Debug\QLSanBong.UC_Administrator.UC_UpdateUser.resources
+D:\software_technology\QL_SanBongMini\QL_SanBongMini\QLSanBong\obj\Debug\QLSanBong.UC_Administrator.UC_Profile.resources

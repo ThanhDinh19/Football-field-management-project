@@ -29,29 +29,30 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelUsername = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.uC_ViewUser1 = new QLSanBong.UC_Administrator.UC_ViewUser();
-            this.uC_AddUser1 = new QLSanBong.UC_Administrator.UC_AddUser();
-            this.uC_Dashboard1 = new QLSanBong.UC_Administrator.UC_Dashboard();
             this.btn_LogOut = new System.Windows.Forms.Button();
             this.btn_Profile = new System.Windows.Forms.Button();
             this.btn_ViewUser = new System.Windows.Forms.Button();
             this.btn_AddUser = new System.Windows.Forms.Button();
             this.btn_Dashboard = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.uC_UpdateUser1 = new QLSanBong.UC_Administrator.UC_UpdateUser();
+            this.uC_ViewUser1 = new QLSanBong.UC_Administrator.UC_ViewUser();
+            this.uC_AddUser1 = new QLSanBong.UC_Administrator.UC_AddUser();
+            this.uC_Dashboard1 = new QLSanBong.UC_Administrator.UC_Dashboard();
+            this.uC_Profile1 = new QLSanBong.UC_Administrator.UC_Profile();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.labelUsername);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btn_LogOut);
             this.panel1.Controls.Add(this.btn_Profile);
@@ -64,15 +65,15 @@
             this.panel1.Size = new System.Drawing.Size(423, 860);
             this.panel1.TabIndex = 0;
             // 
-            // label2
+            // labelUsername
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(147, 800);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 28);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Username";
+            this.labelUsername.AutoSize = true;
+            this.labelUsername.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUsername.Location = new System.Drawing.Point(147, 800);
+            this.labelUsername.Name = "labelUsername";
+            this.labelUsername.Size = new System.Drawing.Size(106, 28);
+            this.labelUsername.TabIndex = 3;
+            this.labelUsername.Text = "Username";
             // 
             // label1
             // 
@@ -84,42 +85,6 @@
             this.label1.Size = new System.Drawing.Size(266, 50);
             this.label1.TabIndex = 2;
             this.label1.Text = "Administrator";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.uC_UpdateUser1);
-            this.panel2.Controls.Add(this.uC_ViewUser1);
-            this.panel2.Controls.Add(this.uC_AddUser1);
-            this.panel2.Controls.Add(this.uC_Dashboard1);
-            this.panel2.Location = new System.Drawing.Point(423, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1136, 860);
-            this.panel2.TabIndex = 1;
-            // 
-            // uC_ViewUser1
-            // 
-            this.uC_ViewUser1.BackColor = System.Drawing.Color.White;
-            this.uC_ViewUser1.ForeColor = System.Drawing.Color.Black;
-            this.uC_ViewUser1.Location = new System.Drawing.Point(0, 0);
-            this.uC_ViewUser1.Name = "uC_ViewUser1";
-            this.uC_ViewUser1.Size = new System.Drawing.Size(1136, 860);
-            this.uC_ViewUser1.TabIndex = 2;
-            // 
-            // uC_AddUser1
-            // 
-            this.uC_AddUser1.BackColor = System.Drawing.Color.White;
-            this.uC_AddUser1.Location = new System.Drawing.Point(-3, 0);
-            this.uC_AddUser1.Name = "uC_AddUser1";
-            this.uC_AddUser1.Size = new System.Drawing.Size(1136, 860);
-            this.uC_AddUser1.TabIndex = 1;
-            // 
-            // uC_Dashboard1
-            // 
-            this.uC_Dashboard1.BackColor = System.Drawing.Color.White;
-            this.uC_Dashboard1.Location = new System.Drawing.Point(0, 2);
-            this.uC_Dashboard1.Name = "uC_Dashboard1";
-            this.uC_Dashboard1.Size = new System.Drawing.Size(1133, 857);
-            this.uC_Dashboard1.TabIndex = 0;
             // 
             // btn_LogOut
             // 
@@ -216,6 +181,18 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.uC_Profile1);
+            this.panel2.Controls.Add(this.uC_UpdateUser1);
+            this.panel2.Controls.Add(this.uC_ViewUser1);
+            this.panel2.Controls.Add(this.uC_AddUser1);
+            this.panel2.Controls.Add(this.uC_Dashboard1);
+            this.panel2.Location = new System.Drawing.Point(423, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1136, 860);
+            this.panel2.TabIndex = 1;
+            // 
             // uC_UpdateUser1
             // 
             this.uC_UpdateUser1.BackColor = System.Drawing.Color.White;
@@ -224,6 +201,40 @@
             this.uC_UpdateUser1.Name = "uC_UpdateUser1";
             this.uC_UpdateUser1.Size = new System.Drawing.Size(1136, 860);
             this.uC_UpdateUser1.TabIndex = 3;
+            // 
+            // uC_ViewUser1
+            // 
+            this.uC_ViewUser1.BackColor = System.Drawing.Color.White;
+            this.uC_ViewUser1.ForeColor = System.Drawing.Color.Black;
+            this.uC_ViewUser1.Location = new System.Drawing.Point(0, 0);
+            this.uC_ViewUser1.Name = "uC_ViewUser1";
+            this.uC_ViewUser1.Size = new System.Drawing.Size(1136, 860);
+            this.uC_ViewUser1.TabIndex = 2;
+            // 
+            // uC_AddUser1
+            // 
+            this.uC_AddUser1.BackColor = System.Drawing.Color.White;
+            this.uC_AddUser1.Location = new System.Drawing.Point(-3, 0);
+            this.uC_AddUser1.Name = "uC_AddUser1";
+            this.uC_AddUser1.Size = new System.Drawing.Size(1136, 860);
+            this.uC_AddUser1.TabIndex = 1;
+            // 
+            // uC_Dashboard1
+            // 
+            this.uC_Dashboard1.BackColor = System.Drawing.Color.White;
+            this.uC_Dashboard1.Location = new System.Drawing.Point(0, 2);
+            this.uC_Dashboard1.Name = "uC_Dashboard1";
+            this.uC_Dashboard1.Size = new System.Drawing.Size(1133, 857);
+            this.uC_Dashboard1.TabIndex = 0;
+            // 
+            // uC_Profile1
+            // 
+            this.uC_Profile1.BackColor = System.Drawing.Color.White;
+            this.uC_Profile1.ForeColor = System.Drawing.Color.Black;
+            this.uC_Profile1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Profile1.Name = "uC_Profile1";
+            this.uC_Profile1.Size = new System.Drawing.Size(1136, 860);
+            this.uC_Profile1.TabIndex = 4;
             // 
             // Administrator
             // 
@@ -240,8 +251,8 @@
             this.Load += new System.EventHandler(this.Administrator_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -257,11 +268,12 @@
         private System.Windows.Forms.Button btn_AddUser;
         private System.Windows.Forms.Button btn_Dashboard;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelUsername;
         private System.Windows.Forms.Panel panel2;
         private UC_Administrator.UC_Dashboard uC_Dashboard1;
         private UC_Administrator.UC_AddUser uC_AddUser1;
         private UC_Administrator.UC_ViewUser uC_ViewUser1;
         private UC_Administrator.UC_UpdateUser uC_UpdateUser1;
+        private UC_Administrator.UC_Profile uC_Profile1;
     }
 }

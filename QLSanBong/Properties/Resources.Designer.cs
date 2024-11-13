@@ -293,6 +293,16 @@ namespace QLSanBong.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hide_passw_40px2 {
+            get {
+                object obj = ResourceManager.GetObject("hide_passw_40px2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap HUITlogo {
             get {
                 object obj = ResourceManager.GetObject("HUITlogo", resourceCulture);

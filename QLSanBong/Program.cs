@@ -16,7 +16,7 @@ namespace QLSanBong
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Administrator());
+            Application.Run(new SignInFormForAdmin());
         }
     }
 }

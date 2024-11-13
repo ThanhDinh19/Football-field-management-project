@@ -1,6 +1,6 @@
 ﻿namespace QLSanBong.UC_Administrator
 {
-    partial class UC_UpdateUser
+    partial class UC_Profile
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,9 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_UpdateUser));
-            this.txt_Password = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Profile));
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rdo_suspended = new System.Windows.Forms.RadioButton();
+            this.rdo_locked = new System.Windows.Forms.RadioButton();
+            this.rdo_active = new System.Windows.Forms.RadioButton();
+            this.labelUsername = new System.Windows.Forms.Label();
+            this.pictureEmployee = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.ShowHide = new System.Windows.Forms.PictureBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -43,6 +47,8 @@
             this.CardPhoto = new System.Windows.Forms.PictureBox();
             this.btn_ChooseImg = new System.Windows.Forms.Button();
             this.txt_Fullname = new System.Windows.Forms.TextBox();
+            this.txt_Password = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.labelPassword = new System.Windows.Forms.Label();
             this.labelSalary = new System.Windows.Forms.Label();
             this.txt_Address = new System.Windows.Forms.TextBox();
@@ -56,41 +62,82 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureEmployee = new System.Windows.Forms.PictureBox();
             this.btn_Update = new System.Windows.Forms.Button();
             this.btn_Reset = new System.Windows.Forms.Button();
-            this.labelUsername = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.rdo_suspended = new System.Windows.Forms.RadioButton();
-            this.rdo_locked = new System.Windows.Forms.RadioButton();
-            this.rdo_active = new System.Windows.Forms.RadioButton();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEmployee)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ShowHide)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CardPhoto)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEmployee)).BeginInit();
-            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // txt_Password
+            // groupBox2
             // 
-            this.txt_Password.Location = new System.Drawing.Point(40, 513);
-            this.txt_Password.Multiline = true;
-            this.txt_Password.Name = "txt_Password";
-            this.txt_Password.PasswordChar = '*';
-            this.txt_Password.Size = new System.Drawing.Size(249, 44);
-            this.txt_Password.TabIndex = 45;
+            this.groupBox2.Controls.Add(this.rdo_suspended);
+            this.groupBox2.Controls.Add(this.rdo_locked);
+            this.groupBox2.Controls.Add(this.rdo_active);
+            this.groupBox2.Location = new System.Drawing.Point(36, 526);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(374, 44);
+            this.groupBox2.TabIndex = 57;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Status";
             // 
-            // label15
+            // rdo_suspended
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(34, 482);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(110, 31);
-            this.label15.TabIndex = 47;
-            this.label15.Text = "Password";
+            this.rdo_suspended.AutoSize = true;
+            this.rdo_suspended.Location = new System.Drawing.Point(259, 18);
+            this.rdo_suspended.Name = "rdo_suspended";
+            this.rdo_suspended.Size = new System.Drawing.Size(98, 20);
+            this.rdo_suspended.TabIndex = 28;
+            this.rdo_suspended.TabStop = true;
+            this.rdo_suspended.Text = "Suspended";
+            this.rdo_suspended.UseVisualStyleBackColor = true;
+            // 
+            // rdo_locked
+            // 
+            this.rdo_locked.AutoSize = true;
+            this.rdo_locked.Location = new System.Drawing.Point(135, 18);
+            this.rdo_locked.Name = "rdo_locked";
+            this.rdo_locked.Size = new System.Drawing.Size(73, 20);
+            this.rdo_locked.TabIndex = 27;
+            this.rdo_locked.TabStop = true;
+            this.rdo_locked.Text = "Locked";
+            this.rdo_locked.UseVisualStyleBackColor = true;
+            // 
+            // rdo_active
+            // 
+            this.rdo_active.AutoSize = true;
+            this.rdo_active.Location = new System.Drawing.Point(10, 18);
+            this.rdo_active.Name = "rdo_active";
+            this.rdo_active.Size = new System.Drawing.Size(65, 20);
+            this.rdo_active.TabIndex = 26;
+            this.rdo_active.TabStop = true;
+            this.rdo_active.Text = "Active";
+            this.rdo_active.UseVisualStyleBackColor = true;
+            // 
+            // labelUsername
+            // 
+            this.labelUsername.AutoSize = true;
+            this.labelUsername.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUsername.Location = new System.Drawing.Point(161, 492);
+            this.labelUsername.Name = "labelUsername";
+            this.labelUsername.Size = new System.Drawing.Size(117, 31);
+            this.labelUsername.TabIndex = 56;
+            this.labelUsername.Text = "Username";
+            // 
+            // pictureEmployee
+            // 
+            this.pictureEmployee.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureEmployee.Image = global::QLSanBong.Properties.Resources.noUserImage;
+            this.pictureEmployee.Location = new System.Drawing.Point(109, 244);
+            this.pictureEmployee.Name = "pictureEmployee";
+            this.pictureEmployee.Size = new System.Drawing.Size(232, 245);
+            this.pictureEmployee.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureEmployee.TabIndex = 55;
+            this.pictureEmployee.TabStop = false;
             // 
             // groupBox1
             // 
@@ -116,10 +163,10 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
-            this.groupBox1.Location = new System.Drawing.Point(467, 65);
+            this.groupBox1.Location = new System.Drawing.Point(454, 75);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(646, 592);
-            this.groupBox1.TabIndex = 47;
+            this.groupBox1.TabIndex = 54;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Personal Information";
             // 
@@ -249,6 +296,25 @@
             this.txt_Fullname.Size = new System.Drawing.Size(346, 44);
             this.txt_Fullname.TabIndex = 33;
             // 
+            // txt_Password
+            // 
+            this.txt_Password.Location = new System.Drawing.Point(40, 513);
+            this.txt_Password.Multiline = true;
+            this.txt_Password.Name = "txt_Password";
+            this.txt_Password.PasswordChar = '*';
+            this.txt_Password.Size = new System.Drawing.Size(249, 44);
+            this.txt_Password.TabIndex = 45;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(34, 482);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(110, 31);
+            this.label15.TabIndex = 47;
+            this.label15.Text = "Password";
+            // 
             // labelPassword
             // 
             this.labelPassword.AutoSize = true;
@@ -307,6 +373,7 @@
             // 
             // txt_Salary
             // 
+            this.txt_Salary.Enabled = false;
             this.txt_Salary.Location = new System.Drawing.Point(263, 258);
             this.txt_Salary.Multiline = true;
             this.txt_Salary.Name = "txt_Salary";
@@ -373,17 +440,6 @@
             this.label5.TabIndex = 34;
             this.label5.Text = "Address";
             // 
-            // pictureEmployee
-            // 
-            this.pictureEmployee.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureEmployee.Image = global::QLSanBong.Properties.Resources.noUserImage;
-            this.pictureEmployee.Location = new System.Drawing.Point(122, 234);
-            this.pictureEmployee.Name = "pictureEmployee";
-            this.pictureEmployee.Size = new System.Drawing.Size(232, 245);
-            this.pictureEmployee.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureEmployee.TabIndex = 49;
-            this.pictureEmployee.TabStop = false;
-            // 
             // btn_Update
             // 
             this.btn_Update.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -391,10 +447,10 @@
             this.btn_Update.ForeColor = System.Drawing.Color.White;
             this.btn_Update.Image = ((System.Drawing.Image)(resources.GetObject("btn_Update.Image")));
             this.btn_Update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Update.Location = new System.Drawing.Point(592, 718);
+            this.btn_Update.Location = new System.Drawing.Point(579, 728);
             this.btn_Update.Name = "btn_Update";
             this.btn_Update.Size = new System.Drawing.Size(165, 62);
-            this.btn_Update.TabIndex = 42;
+            this.btn_Update.TabIndex = 52;
             this.btn_Update.Text = "Update";
             this.btn_Update.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Update.UseVisualStyleBackColor = false;
@@ -407,71 +463,16 @@
             this.btn_Reset.ForeColor = System.Drawing.Color.White;
             this.btn_Reset.Image = ((System.Drawing.Image)(resources.GetObject("btn_Reset.Image")));
             this.btn_Reset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Reset.Location = new System.Drawing.Point(835, 718);
+            this.btn_Reset.Location = new System.Drawing.Point(822, 728);
             this.btn_Reset.Name = "btn_Reset";
             this.btn_Reset.Size = new System.Drawing.Size(153, 62);
-            this.btn_Reset.TabIndex = 43;
+            this.btn_Reset.TabIndex = 53;
             this.btn_Reset.Text = "Reset";
             this.btn_Reset.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Reset.UseVisualStyleBackColor = false;
             this.btn_Reset.Click += new System.EventHandler(this.btn_Reset_Click);
             // 
-            // labelUsername
-            // 
-            this.labelUsername.AutoSize = true;
-            this.labelUsername.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUsername.Location = new System.Drawing.Point(174, 482);
-            this.labelUsername.Name = "labelUsername";
-            this.labelUsername.Size = new System.Drawing.Size(117, 31);
-            this.labelUsername.TabIndex = 50;
-            this.labelUsername.Text = "Username";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.rdo_suspended);
-            this.groupBox2.Controls.Add(this.rdo_locked);
-            this.groupBox2.Controls.Add(this.rdo_active);
-            this.groupBox2.Location = new System.Drawing.Point(49, 516);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(374, 44);
-            this.groupBox2.TabIndex = 51;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Status";
-            // 
-            // rdo_suspended
-            // 
-            this.rdo_suspended.AutoSize = true;
-            this.rdo_suspended.Location = new System.Drawing.Point(259, 18);
-            this.rdo_suspended.Name = "rdo_suspended";
-            this.rdo_suspended.Size = new System.Drawing.Size(98, 20);
-            this.rdo_suspended.TabIndex = 28;
-            this.rdo_suspended.TabStop = true;
-            this.rdo_suspended.Text = "Suspended";
-            this.rdo_suspended.UseVisualStyleBackColor = true;
-            // 
-            // rdo_locked
-            // 
-            this.rdo_locked.AutoSize = true;
-            this.rdo_locked.Location = new System.Drawing.Point(135, 18);
-            this.rdo_locked.Name = "rdo_locked";
-            this.rdo_locked.Size = new System.Drawing.Size(73, 20);
-            this.rdo_locked.TabIndex = 27;
-            this.rdo_locked.TabStop = true;
-            this.rdo_locked.Text = "Locked";
-            this.rdo_locked.UseVisualStyleBackColor = true;
-            // 
-            // rdo_active
-            // 
-            this.rdo_active.AutoSize = true;
-            this.rdo_active.Location = new System.Drawing.Point(10, 18);
-            this.rdo_active.Name = "rdo_active";
-            this.rdo_active.Size = new System.Drawing.Size(65, 20);
-            this.rdo_active.TabIndex = 26;
-            this.rdo_active.TabStop = true;
-            this.rdo_active.Text = "Active";
-            this.rdo_active.UseVisualStyleBackColor = true;
-            // 
-            // UC_UpdateUser
+            // UC_Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -483,8 +484,11 @@
             this.Controls.Add(this.btn_Update);
             this.Controls.Add(this.btn_Reset);
             this.ForeColor = System.Drawing.Color.Black;
-            this.Name = "UC_UpdateUser";
+            this.Name = "UC_Profile";
             this.Size = new System.Drawing.Size(1136, 860);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEmployee)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ShowHide)).EndInit();
@@ -492,21 +496,21 @@
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.CardPhoto)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEmployee)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button btn_Update;
-        private System.Windows.Forms.Button btn_Reset;
-        private System.Windows.Forms.PictureBox ShowHide;
-        private System.Windows.Forms.TextBox txt_Password;
-        private System.Windows.Forms.Label label15;
+
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton rdo_suspended;
+        private System.Windows.Forms.RadioButton rdo_locked;
+        private System.Windows.Forms.RadioButton rdo_active;
+        private System.Windows.Forms.Label labelUsername;
+        private System.Windows.Forms.PictureBox pictureEmployee;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.PictureBox ShowHide;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.RadioButton rdo_Other;
         private System.Windows.Forms.RadioButton rdo_Male;
@@ -517,6 +521,9 @@
         private System.Windows.Forms.PictureBox CardPhoto;
         private System.Windows.Forms.Button btn_ChooseImg;
         private System.Windows.Forms.TextBox txt_Fullname;
+        private System.Windows.Forms.TextBox txt_Password;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label labelPassword;
         private System.Windows.Forms.Label labelSalary;
         private System.Windows.Forms.TextBox txt_Address;
         private System.Windows.Forms.Label labelPhonenumber;
@@ -529,12 +536,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureEmployee;
-        private System.Windows.Forms.Label labelUsername;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RadioButton rdo_suspended;
-        private System.Windows.Forms.RadioButton rdo_locked;
-        private System.Windows.Forms.RadioButton rdo_active;
-        private System.Windows.Forms.Label labelPassword;
+        private System.Windows.Forms.Button btn_Update;
+        private System.Windows.Forms.Button btn_Reset;
     }
 }

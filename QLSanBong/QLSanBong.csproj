@@ -111,6 +111,12 @@
     <Compile Include="UC_Administrator\UC_Dashboard.Designer.cs">
       <DependentUpon>UC_Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_Administrator\UC_Profile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Administrator\UC_Profile.Designer.cs">
+      <DependentUpon>UC_Profile.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_Administrator\UC_ViewUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -162,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Administrator\UC_Dashboard.resx">
       <DependentUpon>UC_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Administrator\UC_Profile.resx">
+      <DependentUpon>UC_Profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Administrator\UC_ViewUser.resx">
       <DependentUpon>UC_ViewUser.cs</DependentUpon>
@@ -355,6 +364,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\noUserImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide_passw_40px2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

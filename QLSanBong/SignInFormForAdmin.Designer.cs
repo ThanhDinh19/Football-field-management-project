@@ -31,14 +31,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignInFormForAdmin));
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txt_Password = new System.Windows.Forms.TextBox();
+            this.txt_Username = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.cbo_Role = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.labelPUsername = new System.Windows.Forms.Label();
+            this.labelPassword = new System.Windows.Forms.Label();
+            this.labelNotification = new System.Windows.Forms.Label();
             this.ShowHide = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_SignIn = new System.Windows.Forms.Button();
@@ -70,33 +72,24 @@
             this.label4.TabIndex = 19;
             this.label4.Text = "Username";
             // 
-            // textBox2
+            // txt_Password
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(697, 386);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(376, 49);
-            this.textBox2.TabIndex = 16;
+            this.txt_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Password.Location = new System.Drawing.Point(697, 386);
+            this.txt_Password.Multiline = true;
+            this.txt_Password.Name = "txt_Password";
+            this.txt_Password.PasswordChar = '*';
+            this.txt_Password.Size = new System.Drawing.Size(376, 49);
+            this.txt_Password.TabIndex = 16;
             // 
-            // textBox1
+            // txt_Username
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(697, 275);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(376, 49);
-            this.textBox1.TabIndex = 17;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(942, 438);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 19);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Forgot password";
+            this.txt_Username.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Username.Location = new System.Drawing.Point(697, 275);
+            this.txt_Username.Multiline = true;
+            this.txt_Username.Name = "txt_Username";
+            this.txt_Username.Size = new System.Drawing.Size(376, 49);
+            this.txt_Username.TabIndex = 0;
             // 
             // panel1
             // 
@@ -148,15 +141,46 @@
             this.label6.TabIndex = 19;
             this.label6.Text = "Sign In";
             // 
+            // labelPUsername
+            // 
+            this.labelPUsername.AutoSize = true;
+            this.labelPUsername.ForeColor = System.Drawing.Color.Red;
+            this.labelPUsername.Location = new System.Drawing.Point(695, 327);
+            this.labelPUsername.Name = "labelPUsername";
+            this.labelPUsername.Size = new System.Drawing.Size(70, 16);
+            this.labelPUsername.TabIndex = 46;
+            this.labelPUsername.Text = "notification";
+            // 
+            // labelPassword
+            // 
+            this.labelPassword.AutoSize = true;
+            this.labelPassword.ForeColor = System.Drawing.Color.Red;
+            this.labelPassword.Location = new System.Drawing.Point(694, 438);
+            this.labelPassword.Name = "labelPassword";
+            this.labelPassword.Size = new System.Drawing.Size(70, 16);
+            this.labelPassword.TabIndex = 46;
+            this.labelPassword.Text = "notification";
+            // 
+            // labelNotification
+            // 
+            this.labelNotification.AutoSize = true;
+            this.labelNotification.ForeColor = System.Drawing.Color.Red;
+            this.labelNotification.Location = new System.Drawing.Point(696, 669);
+            this.labelNotification.Name = "labelNotification";
+            this.labelNotification.Size = new System.Drawing.Size(70, 16);
+            this.labelNotification.TabIndex = 46;
+            this.labelNotification.Text = "notification";
+            // 
             // ShowHide
             // 
-            this.ShowHide.Image = global::QLSanBong.Properties.Resources.show_passw_40px;
+            this.ShowHide.Image = global::QLSanBong.Properties.Resources.hide_passw_40px2;
             this.ShowHide.Location = new System.Drawing.Point(1033, 386);
             this.ShowHide.Name = "ShowHide";
             this.ShowHide.Size = new System.Drawing.Size(40, 40);
             this.ShowHide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ShowHide.TabIndex = 45;
             this.ShowHide.TabStop = false;
+            this.ShowHide.Click += new System.EventHandler(this.ShowHide_Click);
             // 
             // pictureBox1
             // 
@@ -183,6 +207,7 @@
             this.btn_SignIn.Text = "Sign in";
             this.btn_SignIn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_SignIn.UseVisualStyleBackColor = false;
+            this.btn_SignIn.Click += new System.EventHandler(this.btn_SignIn_Click);
             // 
             // btn_Reset
             // 
@@ -215,6 +240,9 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1328, 737);
+            this.Controls.Add(this.labelPassword);
+            this.Controls.Add(this.labelNotification);
+            this.Controls.Add(this.labelPUsername);
             this.Controls.Add(this.ShowHide);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.cbo_Role);
@@ -225,9 +253,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txt_Password);
+            this.Controls.Add(this.txt_Username);
             this.Name = "SignInFormForAdmin";
             this.Text = "Sign In";
             this.panel1.ResumeLayout(false);
@@ -243,9 +270,8 @@
         #endregion
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txt_Password;
+        private System.Windows.Forms.TextBox txt_Username;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label5;
@@ -256,5 +282,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox ShowHide;
+        private System.Windows.Forms.Label labelPUsername;
+        private System.Windows.Forms.Label labelPassword;
+        private System.Windows.Forms.Label labelNotification;
     }
 }

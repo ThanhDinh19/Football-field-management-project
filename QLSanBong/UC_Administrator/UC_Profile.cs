@@ -5,23 +5,19 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace QLSanBong.UC_Administrator
 {
-    public partial class UC_UpdateUser : UserControl
+    public partial class UC_Profile : UserControl
     {
         DataProvider dataProvider = new DataProvider();
-
         string EmployeeID;
         string ImgName;
         string pathImage;
-
-        public UC_UpdateUser()
+        public UC_Profile()
         {
             InitializeComponent();
             init();
@@ -30,35 +26,37 @@ namespace QLSanBong.UC_Administrator
         private void init()
         {
             load_cbo_Position();
-            Invisible();
-            CardPhoto.Image = null;
         }
 
-        private void Invisible()
+        private void load_cbo_Position()
         {
-            labelFullname.Visible = false;
-            labelPhonenumber.Visible = false;
-            labelAddress.Visible = false;
-            labelSalary.Visible = false;
-            labelPassword.Visible = false;
+            DataTable dt = new DataTable();
+            dt = dataProvider.ExecQuery("Select * from ChucVu");
+            cbo_Position.DisplayMember = "TenCV";
+            cbo_Position.ValueMember = "MaCV";
+            cbo_Position.DataSource = dt;
+
+            cbo_Position.SelectedIndex = 1;
+
+            cbo_Position.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
-        public void SetMessage(string employeeID)
+        public void ReceiveMessage(string employeeID = "")
         {
             EmployeeID = employeeID;
-            cbo_Position.SelectedValue = dataProvider.ExecScalar("select MaCV from NhanVien where MaNhanVien = '"+employeeID+"'");
-            txt_Fullname.Text = dataProvider.ExecScalar("select TenNhanVien from NhanVien where MaNhanVien = '"+employeeID+"'").ToString();
-            txt_Phonenumber.Text = dataProvider.ExecScalar("select SoDienThoai from NhanVien where MaNhanVien = '"+employeeID+"'").ToString();
-            txt_Address.Text = dataProvider.ExecScalar("select DiaChi from NhanVien where MaNhanVien = '"+employeeID+"'").ToString();
-            txt_Salary.Text = dataProvider.ExecScalar("select Luong from NhanVien where MaNhanVien = '"+employeeID+"'").ToString();
+            cbo_Position.SelectedValue = dataProvider.ExecScalar("select MaCV from NhanVien where MaNhanVien = '" + employeeID + "'");
+            txt_Fullname.Text = dataProvider.ExecScalar("select TenNhanVien from NhanVien where MaNhanVien = '" + employeeID + "'").ToString();
+            txt_Phonenumber.Text = dataProvider.ExecScalar("select SoDienThoai from NhanVien where MaNhanVien = '" + employeeID + "'").ToString();
+            txt_Address.Text = dataProvider.ExecScalar("select DiaChi from NhanVien where MaNhanVien = '" + employeeID + "'").ToString();
+            txt_Salary.Text = dataProvider.ExecScalar("select Luong from NhanVien where MaNhanVien = '" + employeeID + "'").ToString();
             txt_Password.Text = dataProvider.ExecScalar("select PasswordNV from Table_UserNV where MaNhanVien = '" + employeeID + "'").ToString();
 
             string gender = dataProvider.ExecScalar("select GioiTinh from NhanVien where MaNhanVien = '" + employeeID + "'").ToString();
-            if(gender.Trim() == "Male")
+            if (gender.Trim() == "Male")
             {
                 rdo_Male.Checked = true;
             }
-            else if(gender.Trim() == "Other")
+            else if (gender.Trim() == "Other")
             {
                 rdo_Other.Checked = true;
             }
@@ -82,7 +80,7 @@ namespace QLSanBong.UC_Administrator
             {
                 rdo_suspended.Checked = true;
             }
-            
+
             string query_Img = "SELECT AnhThe FROM NhanVien WHERE MaNhanVien = '" + employeeID + "'";
             ImgName = dataProvider.ExecScalar(query_Img).ToString();
             DisplayEmployeeImage(ImgName);
@@ -99,19 +97,6 @@ namespace QLSanBong.UC_Administrator
             {
                 pictureEmployee.Image = Properties.Resources.noUserImage;
             }
-        }
-
-        private void load_cbo_Position()
-        {
-            DataTable dt = new DataTable();
-            dt = dataProvider.ExecQuery("Select * from ChucVu");
-            cbo_Position.DisplayMember = "TenCV";
-            cbo_Position.ValueMember = "MaCV";
-            cbo_Position.DataSource = dt;
-
-            cbo_Position.SelectedIndex = 1;
-
-            cbo_Position.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
         private void ShowHide_Click(object sender, EventArgs e)
@@ -149,7 +134,7 @@ namespace QLSanBong.UC_Administrator
 
         private void update_EmployeeImage()
         {
-            if(CardPhoto.Image != null)
+            if (CardPhoto.Image != null)
             {
                 string ImgName = dataProvider.ExecScalar("select AnhThe from NhanVien where MaNhanVien = '" + EmployeeID + "'").ToString();
                 if (string.IsNullOrEmpty(ImgName))
@@ -159,7 +144,7 @@ namespace QLSanBong.UC_Administrator
                 else
                 {
                     saveImg(pathImage, EmployeeID);
-                }             
+                }
             }
         }
 
@@ -179,7 +164,7 @@ namespace QLSanBong.UC_Administrator
             {
                 Img = "";
             }
-            string query = "update NhanVien set AnhThe = '" + Img + "' where MaNhanVien = '"+EmployeeID+"'";
+            string query = "update NhanVien set AnhThe = '" + Img + "' where MaNhanVien = '" + EmployeeID + "'";
             dataProvider.ExecNonQuery(query);
         }
 
@@ -243,7 +228,7 @@ namespace QLSanBong.UC_Administrator
                         labelSalary.ForeColor = Color.Red;
                         labelSalary.Visible = true;
                     }
-                    
+
                     if (tb.Name == "txt_Password")
                     {
                         labelPassword.Text = "Please enter password";
@@ -365,10 +350,10 @@ namespace QLSanBong.UC_Administrator
 
         private void btn_Reset_Click(object sender, EventArgs e)
         {
-            SetMessage(EmployeeID);
+            ReceiveMessage(EmployeeID);
             CardPhoto.Image = null;
         }
-             
+
         private void btn_ChooseImg_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog openFileDialog = new OpenFileDialog())

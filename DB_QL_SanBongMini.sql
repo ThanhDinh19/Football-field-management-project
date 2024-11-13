@@ -207,3 +207,7 @@ as
 	end
 
 select * from NhanVien
+select * from Table_UserNV
+
+
+select us.TaiKhoanNV from NhanVien nv, Table_UserNV us where nv.MaNhanVien = us.MaNhanVien and nv.MaNhanVien = 'EMP000003'

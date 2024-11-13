@@ -13,11 +13,13 @@ namespace QLSanBong
 {
     public partial class Administrator : Form
     {
-        public Administrator()
+        DataProvider dataProvider = new DataProvider();
+        string employeeID;
+        public Administrator(string EmployeeID)
         {
             InitializeComponent();
-            format_btn();
-
+            employeeID = EmployeeID;
+            init();
             uC_ViewUser1.ShowUpdateUserControlWithMessage += UC_ViewUsers1_ShowUpdateUserControlWithMessage;
         }
 
@@ -26,6 +28,19 @@ namespace QLSanBong
             uC_UpdateUser1.SetMessage(e.Message); // Truyền chuỗi qua UC_UpdateUser
             uC_UpdateUser1.Visible = true;
             uC_UpdateUser1.BringToFront(); // Hiển thị UC_UpdateUser
+        }
+
+        private void init()
+        {
+            labelUsername.Text = userName();       
+            format_btn();
+        }
+
+        private string userName()
+        {
+            string query = "select us.TaiKhoanNV from NhanVien nv, Table_UserNV us where nv.MaNhanVien = us.MaNhanVien and nv.MaNhanVien = '"+employeeID+"'";
+            string usname = dataProvider.ExecScalar(query).ToString();     
+            return usname;
         }
 
         private void format_btn()
@@ -70,6 +85,7 @@ namespace QLSanBong
             uC_AddUser1.Visible = false;
             uC_ViewUser1.Visible = false;
             uC_UpdateUser1.Visible = false;
+            uC_Profile1.Visible = false;
             btn_Dashboard.PerformClick();
         }
 
@@ -108,6 +124,10 @@ namespace QLSanBong
             ResetBtn();
             btn_Profile.ForeColor = Color.Black;
             btn_Profile.BackColor = Color.White;
+
+            uC_Profile1.Visible = true;
+            uC_Profile1.ReceiveMessage(employeeID);
+            uC_Profile1.BringToFront();
         }
 
         private void btn_LogOut_Click(object sender, EventArgs e)
@@ -115,6 +135,10 @@ namespace QLSanBong
             ResetBtn();
             btn_LogOut.ForeColor = Color.Black;
             btn_LogOut.BackColor = Color.White;
+
+            SignInFormForAdmin signinform = new SignInFormForAdmin();
+            signinform.Show();
+            this.Hide();
         }
 
       
