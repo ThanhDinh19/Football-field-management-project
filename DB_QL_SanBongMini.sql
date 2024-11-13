@@ -5,8 +5,8 @@ go
 use QL_SanBongMini
 go
 
-CREATE TABLE SanBong 
 (
+CREATE TABLE SanBong 
     MaSan Varchar(10) PRIMARY KEY,
     TenSan NVARCHAR(200) NOT NULL,
     GiaThue DECIMAL(18, 2) NOT NULL,

@@ -52,9 +52,13 @@
             this.rdo_Female = new System.Windows.Forms.RadioButton();
             this.cbo_Position = new System.Windows.Forms.ComboBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btn_Clear = new System.Windows.Forms.Button();
+            this.CardPhoto = new System.Windows.Forms.PictureBox();
+            this.btn_ChooseImg = new System.Windows.Forms.Button();
             this.labelPosition = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pic_valid = new System.Windows.Forms.PictureBox();
             this.txt_Username = new System.Windows.Forms.TextBox();
             this.labelPassword = new System.Windows.Forms.Label();
             this.txt_Password = new System.Windows.Forms.TextBox();
@@ -63,19 +67,15 @@
             this.label15 = new System.Windows.Forms.Label();
             this.btn_Reset = new System.Windows.Forms.Button();
             this.btn_SignUp = new System.Windows.Forms.Button();
-            this.btn_Clear = new System.Windows.Forms.Button();
-            this.CardPhoto = new System.Windows.Forms.PictureBox();
-            this.btn_ChooseImg = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pic_valid = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CardPhoto)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_valid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelNoti
@@ -337,6 +337,42 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Card Photo";
             // 
+            // btn_Clear
+            // 
+            this.btn_Clear.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Clear.ForeColor = System.Drawing.Color.Black;
+            this.btn_Clear.Image = ((System.Drawing.Image)(resources.GetObject("btn_Clear.Image")));
+            this.btn_Clear.Location = new System.Drawing.Point(170, 92);
+            this.btn_Clear.Name = "btn_Clear";
+            this.btn_Clear.Size = new System.Drawing.Size(49, 45);
+            this.btn_Clear.TabIndex = 48;
+            this.btn_Clear.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Clear.UseVisualStyleBackColor = true;
+            this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
+            // 
+            // CardPhoto
+            // 
+            this.CardPhoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CardPhoto.Location = new System.Drawing.Point(19, 22);
+            this.CardPhoto.Name = "CardPhoto";
+            this.CardPhoto.Size = new System.Drawing.Size(131, 125);
+            this.CardPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.CardPhoto.TabIndex = 46;
+            this.CardPhoto.TabStop = false;
+            // 
+            // btn_ChooseImg
+            // 
+            this.btn_ChooseImg.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ChooseImg.ForeColor = System.Drawing.Color.Black;
+            this.btn_ChooseImg.Image = ((System.Drawing.Image)(resources.GetObject("btn_ChooseImg.Image")));
+            this.btn_ChooseImg.Location = new System.Drawing.Point(170, 36);
+            this.btn_ChooseImg.Name = "btn_ChooseImg";
+            this.btn_ChooseImg.Size = new System.Drawing.Size(49, 45);
+            this.btn_ChooseImg.TabIndex = 47;
+            this.btn_ChooseImg.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_ChooseImg.UseVisualStyleBackColor = true;
+            this.btn_ChooseImg.Click += new System.EventHandler(this.btn_ChooseImg_Click);
+            // 
             // labelPosition
             // 
             this.labelPosition.AutoSize = true;
@@ -374,6 +410,14 @@
             this.groupBox2.TabIndex = 46;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "User Account";
+            // 
+            // pic_valid
+            // 
+            this.pic_valid.Location = new System.Drawing.Point(571, 18);
+            this.pic_valid.Name = "pic_valid";
+            this.pic_valid.Size = new System.Drawing.Size(43, 42);
+            this.pic_valid.TabIndex = 51;
+            this.pic_valid.TabStop = false;
             // 
             // txt_Username
             // 
@@ -462,42 +506,6 @@
             this.btn_SignUp.UseVisualStyleBackColor = false;
             this.btn_SignUp.Click += new System.EventHandler(this.btn_SignUp_Click);
             // 
-            // btn_Clear
-            // 
-            this.btn_Clear.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Clear.ForeColor = System.Drawing.Color.Black;
-            this.btn_Clear.Image = ((System.Drawing.Image)(resources.GetObject("btn_Clear.Image")));
-            this.btn_Clear.Location = new System.Drawing.Point(170, 92);
-            this.btn_Clear.Name = "btn_Clear";
-            this.btn_Clear.Size = new System.Drawing.Size(49, 45);
-            this.btn_Clear.TabIndex = 48;
-            this.btn_Clear.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_Clear.UseVisualStyleBackColor = true;
-            this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
-            // 
-            // CardPhoto
-            // 
-            this.CardPhoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CardPhoto.Location = new System.Drawing.Point(19, 22);
-            this.CardPhoto.Name = "CardPhoto";
-            this.CardPhoto.Size = new System.Drawing.Size(131, 125);
-            this.CardPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.CardPhoto.TabIndex = 46;
-            this.CardPhoto.TabStop = false;
-            // 
-            // btn_ChooseImg
-            // 
-            this.btn_ChooseImg.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ChooseImg.ForeColor = System.Drawing.Color.Black;
-            this.btn_ChooseImg.Image = ((System.Drawing.Image)(resources.GetObject("btn_ChooseImg.Image")));
-            this.btn_ChooseImg.Location = new System.Drawing.Point(170, 36);
-            this.btn_ChooseImg.Name = "btn_ChooseImg";
-            this.btn_ChooseImg.Size = new System.Drawing.Size(49, 45);
-            this.btn_ChooseImg.TabIndex = 47;
-            this.btn_ChooseImg.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_ChooseImg.UseVisualStyleBackColor = true;
-            this.btn_ChooseImg.Click += new System.EventHandler(this.btn_ChooseImg_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::QLSanBong.Properties.Resources.user;
@@ -507,14 +515,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 41;
             this.pictureBox1.TabStop = false;
-            // 
-            // pic_valid
-            // 
-            this.pic_valid.Location = new System.Drawing.Point(571, 18);
-            this.pic_valid.Name = "pic_valid";
-            this.pic_valid.Size = new System.Drawing.Size(43, 42);
-            this.pic_valid.TabIndex = 51;
-            this.pic_valid.TabStop = false;
             // 
             // UC_AddUser
             // 
@@ -536,11 +536,11 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.CardPhoto)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CardPhoto)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_valid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -110,6 +110,30 @@
     <Compile Include="UC_Administrator\UC_Dashboard.Designer.cs">
       <DependentUpon>UC_Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_Customer\Header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Customer\Header.Designer.cs">
+      <DependentUpon>Header.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Customer\UC_DatDichVu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Customer\UC_DatDichVu.Designer.cs">
+      <DependentUpon>UC_DatDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Customer\UC_DatSan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Customer\UC_DatSan.Designer.cs">
+      <DependentUpon>UC_DatSan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Customer\UC_Images.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Customer\UC_Images.Designer.cs">
+      <DependentUpon>UC_Images.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="SignUpFormForCustomer.resx">
       <DependentUpon>SignUpFormForCustomer.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,6 +173,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Administrator\UC_Dashboard.resx">
       <DependentUpon>UC_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Customer\Header.resx">
+      <DependentUpon>Header.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Customer\UC_DatSan.resx">
+      <DependentUpon>UC_DatSan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Customer\UC_Images.resx">
+      <DependentUpon>UC_Images.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -195,16 +228,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\CuongLo.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BLL\BLL.csproj">
-      <Project>{852e8aa2-8bdb-46ba-8b15-d447595dc271}</Project>
-      <Name>BLL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DTO\DTO.csproj">
-      <Project>{253f656d-7064-4eae-8767-b9efb04cfdda}</Project>
-      <Name>DTO</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cLX.gif" />
@@ -316,6 +339,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\register_40px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\San1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\San2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\San3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\San4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\San5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\San6.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -104,6 +104,9 @@ namespace QLSanBong
             btn_LogOut.BackColor = Color.White;
         }
 
-      
+        private void uC_AddUser1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
