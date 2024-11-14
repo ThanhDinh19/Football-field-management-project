@@ -104,6 +104,7 @@
             this.Controls.Add(this.label2);
             this.Name = "KhoHang";
             this.Text = "KhoHang";
+            this.Load += new System.EventHandler(this.KhoHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

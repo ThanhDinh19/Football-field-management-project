@@ -16,3 +16,12 @@ D:\software_technology\QL_SanBongMini\QL_SanBongMini\DAL\obj\Debug\DAL.csproj.As
 D:\software_technology\QL_SanBongMini\QL_SanBongMini\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 D:\software_technology\QL_SanBongMini\QL_SanBongMini\DAL\obj\Debug\DAL.dll
 D:\software_technology\QL_SanBongMini\QL_SanBongMini\DAL\obj\Debug\DAL.pdb
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\DAL\bin\Debug\DAL.dll
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\DAL\bin\Debug\DAL.pdb
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\DAL\obj\Debug\DAL.dll
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\DAL\obj\Debug\DAL.pdb
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\DAL\bin\Debug\DTO.dll
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\DAL\bin\Debug\DTO.pdb
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\DAL\obj\Debug\DAL.csproj.Up2Date

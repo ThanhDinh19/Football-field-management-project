@@ -16,3 +16,9 @@ D:\software_technology\QL_SanBongMini\QL_SanBongMini\DTO\obj\Debug\DTO.csproj.As
 D:\software_technology\QL_SanBongMini\QL_SanBongMini\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\software_technology\QL_SanBongMini\QL_SanBongMini\DTO\obj\Debug\DTO.dll
 D:\software_technology\QL_SanBongMini\QL_SanBongMini\DTO\obj\Debug\DTO.pdb
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\DTO\bin\Debug\DTO.dll
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\DTO\bin\Debug\DTO.pdb
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\DTO\obj\Debug\DTO.dll
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\DTO\obj\Debug\DTO.pdb

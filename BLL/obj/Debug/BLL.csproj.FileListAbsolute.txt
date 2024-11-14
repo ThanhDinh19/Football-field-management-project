@@ -31,3 +31,14 @@ D:\software_technology\QL_SanBongMini\QL_SanBongMini\BLL\obj\Debug\BLL.csproj.Co
 D:\software_technology\QL_SanBongMini\QL_SanBongMini\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\software_technology\QL_SanBongMini\QL_SanBongMini\BLL\obj\Debug\BLL.dll
 D:\software_technology\QL_SanBongMini\QL_SanBongMini\BLL\obj\Debug\BLL.pdb
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\BLL\bin\Debug\BLL.dll
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\BLL\bin\Debug\BLL.pdb
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\BLL\bin\Debug\DAL.dll
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\BLL\bin\Debug\DTO.dll
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\BLL\bin\Debug\DAL.pdb
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\BLL\bin\Debug\DTO.pdb
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\BLL\obj\Debug\BLL.csproj.Up2Date
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\BLL\obj\Debug\BLL.dll
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\BLL\obj\Debug\BLL.pdb

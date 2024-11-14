@@ -38,8 +38,8 @@
             this.btn_Dashboard = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.uC_Dashboard1 = new QLSanBong.UC_Administrator.UC_Dashboard();
             this.uC_AddUser1 = new QLSanBong.UC_Administrator.UC_AddUser();
+            this.uC_Dashboard1 = new QLSanBong.UC_Administrator.UC_Dashboard();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -187,14 +187,6 @@
             this.panel2.Size = new System.Drawing.Size(1136, 860);
             this.panel2.TabIndex = 1;
             // 
-            // uC_Dashboard1
-            // 
-            this.uC_Dashboard1.BackColor = System.Drawing.Color.White;
-            this.uC_Dashboard1.Location = new System.Drawing.Point(0, 2);
-            this.uC_Dashboard1.Name = "uC_Dashboard1";
-            this.uC_Dashboard1.Size = new System.Drawing.Size(1133, 857);
-            this.uC_Dashboard1.TabIndex = 0;
-            // 
             // uC_AddUser1
             // 
             this.uC_AddUser1.BackColor = System.Drawing.Color.White;
@@ -202,6 +194,14 @@
             this.uC_AddUser1.Name = "uC_AddUser1";
             this.uC_AddUser1.Size = new System.Drawing.Size(1136, 860);
             this.uC_AddUser1.TabIndex = 1;
+            // 
+            // uC_Dashboard1
+            // 
+            this.uC_Dashboard1.BackColor = System.Drawing.Color.White;
+            this.uC_Dashboard1.Location = new System.Drawing.Point(0, 2);
+            this.uC_Dashboard1.Name = "uC_Dashboard1";
+            this.uC_Dashboard1.Size = new System.Drawing.Size(1133, 857);
+            this.uC_Dashboard1.TabIndex = 0;
             // 
             // Administrator
             // 
@@ -238,5 +238,6 @@
         private System.Windows.Forms.Panel panel2;
         private UC_Administrator.UC_Dashboard uC_Dashboard1;
         private UC_Administrator.UC_AddUser uC_AddUser1;
+
     }
 }

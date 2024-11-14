@@ -67,3 +67,31 @@ D:\software_technology\QL_SanBongMini\QL_SanBongMini\QLSanBong\obj\Debug\QLSanBo
 D:\software_technology\QL_SanBongMini\QL_SanBongMini\QLSanBong\obj\Debug\QLSanBong.exe
 D:\software_technology\QL_SanBongMini\QL_SanBongMini\QLSanBong\obj\Debug\QLSanBong.pdb
 D:\software_technology\QL_SanBongMini\QL_SanBongMini\QLSanBong\obj\Debug\QLSanBong.UC_Administrator.UC_AddUser.resources
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\QLSanBong\bin\Debug\QLSanBong.exe.config
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\QLSanBong\bin\Debug\QLSanBong.exe
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\QLSanBong\bin\Debug\QLSanBong.pdb
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\QLSanBong\bin\Debug\BLL.dll
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\QLSanBong\bin\Debug\DTO.dll
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\QLSanBong\bin\Debug\BLL.pdb
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\QLSanBong\bin\Debug\DTO.pdb
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\QLSanBong\obj\Debug\QLSanBong.csproj.AssemblyReference.cache
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\QLSanBong\obj\Debug\QLSanBong.SignUpFormForCustomer.resources
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\QLSanBong\obj\Debug\QLSanBong.DatSan.resources
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\QLSanBong\obj\Debug\QLSanBong.Administrator.resources
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\QLSanBong\obj\Debug\QLSanBong.GiaoDienKH.resources
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\QLSanBong\obj\Debug\QLSanBong.KhoHang.resources
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\QLSanBong\obj\Debug\QLSanBong.Properties.Resources.resources
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\QLSanBong\obj\Debug\QLSanBong.SignInFormForCustomer.resources
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\QLSanBong\obj\Debug\QLSanBong.ThongTinKH.resources
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\QLSanBong\obj\Debug\QLSanBong.SignInFormForAdmin.resources
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\QLSanBong\obj\Debug\QLSanBong.UC_Administrator.UC_AddUser.resources
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\QLSanBong\obj\Debug\QLSanBong.UC_Administrator.UC_Dashboard.resources
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\QLSanBong\obj\Debug\QLSanBong.csproj.GenerateResource.cache
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\QLSanBong\obj\Debug\QLSanBong.csproj.CoreCompileInputs.cache
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\QLSanBong\obj\Debug\QLSanBong.csproj.Up2Date
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\QLSanBong\obj\Debug\QLSanBong.exe
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\QLSanBong\obj\Debug\QLSanBong.pdb
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\QLSanBong\bin\Debug\DAL.dll
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\QLSanBong\bin\Debug\DAL.pdb
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\QLSanBong\obj\Debug\QLSanBong.UC_Administrator.UC_GiaoDienKH.resources
+D:\ToiHocHanh\HK5\Công Nghệ Phần Mềm\DoAn_QLSB\QLSanBong\obj\Debug\QLSanBong.UC_Administrator.UC_KhoHang.resources

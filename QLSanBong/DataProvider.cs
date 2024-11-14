@@ -10,7 +10,7 @@ namespace QLSanBong
 {
     public class DataProvider
     {
-        public string ConnectionString = "Data Source=DESKTOP-RSGJD4U\\THANHDINH;Initial Catalog=QL_SanBongMini;Integrated Security=True";
+        public string ConnectionString = "Data Source=DESKTOP-9GVK8OD\\SQLEXPRESS;Initial Catalog=QL_SanBongMini;Integrated Security=True; User ID = sa; Password = 123";
 
         public DataTable ExecQuery(string query, Dictionary<string, object> parameters = null)
         {
