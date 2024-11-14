@@ -41,6 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTO_Booking.cs" />
+    <Compile Include="DTO_BookingSchedule.cs" />
+    <Compile Include="DTO_Customer.cs" />
+    <Compile Include="DTO_Services.cs" />
+    <Compile Include="DTO_SoccerField.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

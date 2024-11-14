@@ -88,6 +88,13 @@ namespace QLSanBong
             ResetBtn();
             btn_ViewUser.ForeColor = Color.Black;
             btn_ViewUser.BackColor = Color.White;
+
+            // Giả sử đây là nút qua trang Đặt Sân của Khách
+            UC_GiaoDienKH uc = new UC_GiaoDienKH();
+            uc.Dock = DockStyle.Fill;
+            panel2.Controls.Clear();
+            panel2.Controls.Add(uc);
+            uc.BringToFront();
         }
 
         private void btn_Profile_Click(object sender, EventArgs e)
@@ -95,6 +102,13 @@ namespace QLSanBong
             ResetBtn();
             btn_Profile.ForeColor = Color.Black;
             btn_Profile.BackColor = Color.White;
+
+            //Giả sử đây là nút qua trang Kho Hàng 
+            UC_KhoHang uc = new UC_KhoHang();
+            uc.Dock = DockStyle.Fill;
+            panel2.Controls.Clear();
+            panel2.Controls.Add(uc);
+            uc.BringToFront();
         }
 
         private void btn_LogOut_Click(object sender, EventArgs e)

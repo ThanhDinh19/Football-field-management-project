@@ -110,6 +110,18 @@
     <Compile Include="UC_Administrator\UC_Dashboard.Designer.cs">
       <DependentUpon>UC_Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_Administrator\UC_GiaoDienKH.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Administrator\UC_GiaoDienKH.Designer.cs">
+      <DependentUpon>UC_GiaoDienKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Administrator\UC_KhoHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Administrator\UC_KhoHang.Designer.cs">
+      <DependentUpon>UC_KhoHang.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="SignUpFormForCustomer.resx">
       <DependentUpon>SignUpFormForCustomer.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,6 +161,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Administrator\UC_Dashboard.resx">
       <DependentUpon>UC_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Administrator\UC_GiaoDienKH.resx">
+      <DependentUpon>UC_GiaoDienKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Administrator\UC_KhoHang.resx">
+      <DependentUpon>UC_KhoHang.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

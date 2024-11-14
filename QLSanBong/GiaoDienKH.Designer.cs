@@ -66,18 +66,18 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(47, 117);
+            this.dataGridView1.Location = new System.Drawing.Point(28, 108);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(674, 430);
+            this.dataGridView1.Size = new System.Drawing.Size(1107, 430);
             this.dataGridView1.TabIndex = 21;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(332, 79);
+            this.label1.Location = new System.Drawing.Point(529, 69);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(124, 26);
             this.label1.TabIndex = 20;
@@ -86,7 +86,7 @@
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(786, 444);
+            this.button5.Location = new System.Drawing.Point(1232, 433);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(171, 62);
             this.button5.TabIndex = 19;
@@ -96,7 +96,7 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(786, 354);
+            this.button4.Location = new System.Drawing.Point(1232, 350);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(171, 62);
             this.button4.TabIndex = 18;
@@ -106,7 +106,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(786, 271);
+            this.button3.Location = new System.Drawing.Point(1232, 270);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(171, 62);
             this.button3.TabIndex = 17;
@@ -116,7 +116,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(-11, 51);
+            this.label2.Location = new System.Drawing.Point(57, 53);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(1043, 16);
             this.label2.TabIndex = 16;
@@ -135,7 +135,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::QLSanBong.Properties.Resources.HUITlogo;
-            this.pictureBox1.Location = new System.Drawing.Point(745, 79);
+            this.pictureBox1.Location = new System.Drawing.Point(1173, 79);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(252, 158);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -197,7 +197,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1019, 559);
+            this.ClientSize = new System.Drawing.Size(1455, 570);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);

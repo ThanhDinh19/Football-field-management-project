@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace QLSanBong
 {
     public partial class GiaoDienKH : Form
     {
+        BLL_BookingSchedule BLL_BookingSchedule = new BLL_BookingSchedule();
         public GiaoDienKH()
         {
             InitializeComponent();
@@ -19,8 +21,7 @@ namespace QLSanBong
 
         private void GiaoDienKH_Load(object sender, EventArgs e)
         {
-         
-            
+            dataGridView1.DataSource = BLL_BookingSchedule.getAllBookingSchedule();
         }
     }
 }

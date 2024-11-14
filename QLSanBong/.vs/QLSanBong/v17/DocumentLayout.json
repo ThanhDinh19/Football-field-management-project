@@ -1,0 +1,90 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ToiHocHanh\\HK5\\C\u00F4ng Ngh\u1EC7 Ph\u1EA7n M\u1EC1m\\DoAn_QLSB\\QLSanBong\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{41548716-AA4B-4B49-9D47-160094754CAB}|..\\DAL\\DAL.csproj|d:\\toihochanh\\hk5\\c\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\doan_qlsb\\dal\\dataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{852E8AA2-8BDB-46BA-8B15-D447595DC271}|..\\BLL\\BLL.csproj|d:\\toihochanh\\hk5\\c\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\doan_qlsb\\bll\\bll_bookingschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41548716-AA4B-4B49-9D47-160094754CAB}|..\\DAL\\DAL.csproj|d:\\toihochanh\\hk5\\c\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\doan_qlsb\\dal\\dal_bookingschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{852E8AA2-8BDB-46BA-8B15-D447595DC271}|..\\BLL\\BLL.csproj|d:\\toihochanh\\hk5\\c\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\doan_qlsb\\bll\\bll_customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataProvider.cs",
+              "DocumentMoniker": "D:\\ToiHocHanh\\HK5\\C\u00F4ng Ngh\u1EC7 Ph\u1EA7n M\u1EC1m\\DoAn_QLSB\\DAL\\DataProvider.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\DataProvider.cs",
+              "ToolTip": "D:\\ToiHocHanh\\HK5\\C\u00F4ng Ngh\u1EC7 Ph\u1EA7n M\u1EC1m\\DoAn_QLSB\\DAL\\DataProvider.cs",
+              "RelativeToolTip": "..\\DAL\\DataProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T07:35:13.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DAL_BookingSchedule.cs",
+              "DocumentMoniker": "D:\\ToiHocHanh\\HK5\\C\u00F4ng Ngh\u1EC7 Ph\u1EA7n M\u1EC1m\\DoAn_QLSB\\DAL\\DAL_BookingSchedule.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\DAL_BookingSchedule.cs",
+              "ToolTip": "D:\\ToiHocHanh\\HK5\\C\u00F4ng Ngh\u1EC7 Ph\u1EA7n M\u1EC1m\\DoAn_QLSB\\DAL\\DAL_BookingSchedule.cs",
+              "RelativeToolTip": "..\\DAL\\DAL_BookingSchedule.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T07:28:26.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BLL_BookingSchedule.cs",
+              "DocumentMoniker": "D:\\ToiHocHanh\\HK5\\C\u00F4ng Ngh\u1EC7 Ph\u1EA7n M\u1EC1m\\DoAn_QLSB\\BLL\\BLL_BookingSchedule.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\BLL_BookingSchedule.cs",
+              "ToolTip": "D:\\ToiHocHanh\\HK5\\C\u00F4ng Ngh\u1EC7 Ph\u1EA7n M\u1EC1m\\DoAn_QLSB\\BLL\\BLL_BookingSchedule.cs",
+              "RelativeToolTip": "..\\BLL\\BLL_BookingSchedule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T07:28:06.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BLL_Customer.cs",
+              "DocumentMoniker": "D:\\ToiHocHanh\\HK5\\C\u00F4ng Ngh\u1EC7 Ph\u1EA7n M\u1EC1m\\DoAn_QLSB\\BLL\\BLL_Customer.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\BLL_Customer.cs",
+              "ToolTip": "D:\\ToiHocHanh\\HK5\\C\u00F4ng Ngh\u1EC7 Ph\u1EA7n M\u1EC1m\\DoAn_QLSB\\BLL\\BLL_Customer.cs",
+              "RelativeToolTip": "..\\BLL\\BLL_Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T07:27:57.52Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
