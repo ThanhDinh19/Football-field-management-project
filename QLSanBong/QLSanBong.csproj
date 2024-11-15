@@ -134,6 +134,12 @@
     <Compile Include="UC_Customer\UC_Images.Designer.cs">
       <DependentUpon>UC_Images.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_Customer\UC_ProfileKH.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Customer\UC_ProfileKH.Designer.cs">
+      <DependentUpon>UC_ProfileKH.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="SignUpFormForCustomer.resx">
       <DependentUpon>SignUpFormForCustomer.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,11 +183,17 @@
     <EmbeddedResource Include="UC_Customer\Header.resx">
       <DependentUpon>Header.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UC_Customer\UC_DatDichVu.resx">
+      <DependentUpon>UC_DatDichVu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UC_Customer\UC_DatSan.resx">
       <DependentUpon>UC_DatSan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Customer\UC_Images.resx">
       <DependentUpon>UC_Images.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Customer\UC_ProfileKH.resx">
+      <DependentUpon>UC_ProfileKH.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -369,6 +381,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\San6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\result_logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\result_profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\result_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\result_picture.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

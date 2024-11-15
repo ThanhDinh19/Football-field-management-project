@@ -18,10 +18,6 @@ namespace QLSanBong.UC_Customer
         {
             InitializeComponent();
         }
-        private void Header_Load(object sender, EventArgs e)
-        {
-
-        }
         private void btn_Home_Click(object sender, EventArgs e)
         {
 

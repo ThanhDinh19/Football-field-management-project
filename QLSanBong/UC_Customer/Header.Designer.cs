@@ -34,15 +34,11 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.btn_Profile = new System.Windows.Forms.PictureBox();
-            this.btn_LogOut = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Home)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Profile)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_LogOut)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -58,14 +54,13 @@
             // btn_Home
             // 
             this.btn_Home.Image = global::QLSanBong.Properties.Resources.home;
-            this.btn_Home.Location = new System.Drawing.Point(16, 15);
+            this.btn_Home.Location = new System.Drawing.Point(32, 18);
             this.btn_Home.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Home.Name = "btn_Home";
             this.btn_Home.Size = new System.Drawing.Size(60, 55);
             this.btn_Home.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_Home.TabIndex = 38;
             this.btn_Home.TabStop = false;
-            this.btn_Home.Click += new System.EventHandler(this.btn_Home_Click);
             // 
             // pictureBox7
             // 
@@ -81,7 +76,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::QLSanBong.Properties.Resources.telegram;
-            this.pictureBox6.Location = new System.Drawing.Point(696, 24);
+            this.pictureBox6.Location = new System.Drawing.Point(1501, 24);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(45, 38);
@@ -92,7 +87,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::QLSanBong.Properties.Resources.instagram;
-            this.pictureBox5.Location = new System.Drawing.Point(644, 24);
+            this.pictureBox5.Location = new System.Drawing.Point(1449, 24);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(45, 38);
@@ -103,7 +98,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::QLSanBong.Properties.Resources.facebook;
-            this.pictureBox4.Location = new System.Drawing.Point(596, 24);
+            this.pictureBox4.Location = new System.Drawing.Point(1401, 24);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(43, 38);
@@ -111,51 +106,24 @@
             this.pictureBox4.TabIndex = 34;
             this.pictureBox4.TabStop = false;
             // 
-            // btn_Profile
-            // 
-            this.btn_Profile.Image = global::QLSanBong.Properties.Resources.profile_user;
-            this.btn_Profile.Location = new System.Drawing.Point(1441, 24);
-            this.btn_Profile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_Profile.Name = "btn_Profile";
-            this.btn_Profile.Size = new System.Drawing.Size(43, 38);
-            this.btn_Profile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_Profile.TabIndex = 33;
-            this.btn_Profile.TabStop = false;
-            // 
-            // btn_LogOut
-            // 
-            this.btn_LogOut.Image = global::QLSanBong.Properties.Resources.logout1;
-            this.btn_LogOut.Location = new System.Drawing.Point(1497, 24);
-            this.btn_LogOut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_LogOut.Name = "btn_LogOut";
-            this.btn_LogOut.Size = new System.Drawing.Size(43, 38);
-            this.btn_LogOut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_LogOut.TabIndex = 31;
-            this.btn_LogOut.TabStop = false;
-            // 
             // uC_Header
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.BackColor = System.Drawing.Color.IndianRed;
             this.Controls.Add(this.btn_Home);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.btn_Profile);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.btn_LogOut);
             this.Name = "uC_Header";
             this.Size = new System.Drawing.Size(1565, 83);
-            this.Load += new System.EventHandler(this.Header_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btn_Home)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Profile)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_LogOut)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -167,9 +135,7 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox btn_Profile;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox btn_LogOut;
         private System.Windows.Forms.PictureBox btn_Home;
     }
 }
